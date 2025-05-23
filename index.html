@@ -1,88 +1,310 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>SC Liu's website</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SC Liu</title>
     <meta name="google-adsense-account" content="ca-pub-9146977563523078" />
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9146977563523078"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="page-wrap">
-      <!-- Nav -->
-      <nav id="nav">
-        <ul>
-          <li>
-            <a href="" class="active"><span class="icon fa-home"></span></a>
-          </li>
-          <li>
-            <a href="msgPackConverter.html"><span class="icon fa-file-text-o"></span></a>
-          </li>
+    <header class="header">
+      <nav class="nav-container">
+        <a class="logo" href="#home">SC WebSite</a>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#side-projects">Side Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#current-study">Current Study</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+    </header>
 
-      <!-- Main -->
-      <section id="main">
-        <!-- Banner -->
-        <section id="banner">
-          <div class="inner">
-            <h1>Hey, I'm SC Liu</h1>
-            <p>You can visit my awesome Github</p>
-            <ul class="actions">
-              <li><a target="_blank" href="https://github.com/ref45638" class="button alt scrolly big">Continue</a></li>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-title">
+            <span class="title-line">Hey there!</span>
+          </div>
+          <p class="hero-subtitle">
+            Welcome to my personal website, this website is made by AI
+            assistants and handcrafted code.
+          </p>
+        </div>
+        <div class="scroll-down" data-scroll="about">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              I'm a backend engineer, mainly working with Golang to build
+              high-concurrency, high-availability, and high-performance API
+              services, distributed systems, and backend infrastructure. Also
+              familiar with Cloud-Native tools like Kubernetes (K8S) and Docker.
+            </p>
+            <p>
+              <em>"Work hard and play hard!" is always my motto of life.</em>
+            </p>
+            <p>
+              I like to try new things, new techniques, and new challenges. I
+              think this is cool. I wish I can enjoy my life and work in the
+              future.
+            </p>
+          </div>
+        </div>
+        <div class="scroll-down" data-scroll="education">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education">
+      <div class="container">
+        <h2>Education</h2>
+        <div class="education-list">
+          <div class="education-card">
+            <div class="education-school">
+              National Cheng Kung University (NCKU)
+            </div>
+            <div class="education-degree">Bachelor of Computer Science</div>
+            <div class="education-year">2017 ~ 2019</div>
+          </div>
+        </div>
+        <div class="scroll-down" data-scroll="side-projects">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="side-projects" class="projects">
+      <div class="container">
+        <h2>Side Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-info">
+              <h3>MsgPack Converter</h3>
+              <p>Simple JavaScript MsgPack Decoder and Encoder Converter</p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>MsgPack</span>
+                <span>Web Tool</span>
+              </div>
+              Online demo:
+              <a
+                href="https://ref45638.github.io/msgpack-converter/"
+                class="project-link"
+                target="_blank"
+                rel="noopener"
+                >DEMO</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="scroll-down" data-scroll="skills">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-icon"><i class="fas fa-code"></i></span>
+              <h3>Programming Languages</h3>
+            </div>
+            <ul>
+              <li>Golang</li>
+              <li>Java</li>
+              <li>JavaScript / TypeScript</li>
+              <li>Node.js</li>
+              <li>Python</li>
             </ul>
           </div>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-          <!-- Social -->
-          <div class="social column">
-            <h3>About Me</h3>
-            <p>
-              I'm a graduating student from Nation Cheng Kung University, which is major in Computer Science. Also I'm a full stack engineer by using
-              Golang, React, familiar with Cloud-Native(K8S, Docker), Web(JavaScript).
-            </p>
-            <p>
-              "Play hard and work hard!" is always be my motto of life.<br />
-              I like to try new things, new techniques, and new challenges, I think this is cool. I wish I can enjoy my life and work in the future.
-            </p>
-            <h3>Follow Me</h3>
-            <ul class="icons">
-              <li>
-                <a target="_blank" href="https://www.facebook.com/scliu0911/" class="icon fa-facebook"><span class="label">Facebook</span></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.instagram.com/ref45638" class="icon fa-instagram"><span class="label">Instagram</span></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://github.com/ref45638" class="icon fa-github"><span class="label">Instagram</span></a>
-              </li>
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-icon"><i class="fas fa-server"></i></span>
+              <h3>Backend / Web Services</h3>
+            </div>
+            <ul>
+              <li>RESTful APIs</li>
+              <li>Spring MVC</li>
+              <li>JWT / OAuth2.0 / Session Management</li>
+              <li>Redis (caching)</li>
+              <li>GraphQL</li>
+              <li>RabbitMQ</li>
             </ul>
           </div>
-          <div class="column">
-            <h3>Side Project</h3>
-            <h4>1. MsgPack Converter</h4>
-            <p style="margin-left: 18px">
-              Simple JavaScript MsgPack Decoder and Encoder Converter<br />
-              Online demo: <a target="_blank" href="https://ref45638.github.io/msgpack-converter/">DEMO</a>
-            </p>
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-icon"><i class="fas fa-desktop"></i></span>
+              <h3>Frontend / UI</h3>
+            </div>
+            <ul>
+              <li>React</li>
+              <li>Next.js</li>
+            </ul>
           </div>
-        </section>
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-icon"><i class="fas fa-database"></i></span>
+              <h3>Database / Storage</h3>
+            </div>
+            <ul>
+              <li>MySQL / Oracle</li>
+              <li>Redis (NoSQL)</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <div class="skill-header">
+              <span class="skill-icon"><i class="fas fa-cogs"></i></span>
+              <h3>DevOps / Deployment</h3>
+            </div>
+            <ul>
+              <li>Git / GitHub / GitLab</li>
+              <li>Docker / Docker Compose</li>
+              <li>Nginx / Apache</li>
+              <li>Kubernetes</li>
+              <li>CI/CD</li>
+            </ul>
+          </div>
+        </div>
+        <div class="scroll-down" data-scroll="current-study">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </section>
 
-        <!-- Footer -->
-        <footer id="footer">
-          <div class="copyright">
-            © 2023 Copyright by SC Liu
-            <a class="grey-text text-lighten-4 right" href="https://github.com/ref45638">More about me</a>
+    <section id="current-study" class="current-study">
+      <div class="container">
+        <h2>Current Study</h2>
+        <ul class="study-list-simple">
+          <li>
+            <strong>AI-powered coding assistants:</strong> cursor, copilot,
+            agent mode for intelligent developer support.
+          </li>
+          <li>
+            <strong>Golang backend development:</strong> fasthttp, cron job
+            scheduling, efficient system design.
+          </li>
+          <li>
+            <strong>Redis integration:</strong> caching and real-time
+            leaderboard for gaming systems.
+          </li>
+          <li>
+            <strong>Java 7 with Spring & Struts2:</strong> asynchronous
+            processing without Spring Boot.
+          </li>
+        </ul>
+        <div class="scroll-down" data-scroll="work">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work">
+      <div class="container">
+        <h2>Work</h2>
+        <!-- Google AdSense 廣告區塊 -->
+        <div style="width:100%;display:flex;justify-content:center;margin-bottom:2.2rem;">
+          <ins class="adsbygoogle"
+            style="display:block;min-width:320px;max-width:100%;height:90px"
+            data-ad-client="ca-pub-9146977563523078"
+            data-ad-slot="1234567890"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        </div>
+        <div class="work-cards">
+          <div class="work-card">
+            <h3>HyWeb <span style="font-weight:normal; font-size:0.9em;">2017.8 - 2022.2</span></h3>
+            <ul>
+              <li><strong>Full-stack Engineer</strong></li>
+              <li>HyLib Library Automation System (JAVA / GO / REACT)</li>
+              <ul>
+                <li>Reading points、points management system</li>
+                <li>Book cover crawler system</li>
+              </ul>
+            </ul>
           </div>
-        </footer>
-      </section>
-    </div>
+          <div class="work-card">
+            <h3>Finger Game <span style="font-weight:normal; font-size:0.9em;">2022.3 - Now</span></h3>
+            <ul>
+              <li><strong>Backend Engineer</strong></li>
+              <li>Slot Game Game Server (JAVA / GO)</li>
+              <ul>
+                <li>20+ slot game</li>
+                <li>Leaderboard System</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <div class="scroll-down" data-scroll="contact">
+          <i class="fas fa-angle-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <a
+              class="contact-item"
+              href="https://www.facebook.com/scliu0911/"
+              target="_blank"
+            >
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+            <a
+              class="contact-item"
+              href="https://www.instagram.com/ref45638"
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a
+              class="contact-item"
+              href="https://github.com/ref45638"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p>Copyright&copy; 2025 SC Liu All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
